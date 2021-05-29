@@ -1,0 +1,127 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Style the nav */
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #333;
+  color: white;
+
+}
+nav h2{
+  margin-right: 140px;
+}
+p{
+font-size: 18px;
+
+}
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #222;
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  color: white;
+
+  font-size: 20px;
+
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #222;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #111;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 26px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tabcontent p{
+  margin: 20px;
+}
+
+.tabcontent h3{
+  font-size: 27px;
+}
+
+footer{
+  text-align: center;
+  font-size: 20px;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: white;
+  background-color: #333;
+}
+
+#displayProduct label{
+  margin-left: 5px;
+  text-transform: uppercase;
+ line-height: 25px;
+ cursor: pointer;
+}
+#displayProduct input{
+  cursor: pointer;
+}
+
+p.choose{
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+#addCart{
+  position: relative;
+  border: none;
+  outline: none;
+  background-color: #333;
+padding: 10px 15px;
+margin-top: 15px;
+color: white;
+font-size: 18px;
+border-radius: 4px;
+cursor: pointer;
+
+}
+
+#addCart:hover{
+  background-color: #222;
+
+}
+#addCart:focus{
+  background-color: #111;
+
+}
+
+#displayCart p{
+  font-size: 17px;
+}
