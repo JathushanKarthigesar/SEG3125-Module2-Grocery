@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="styles/style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+
+  <!-- Tab links, each one with an onclick event associated with it -->
+ <nav>
+   <h2>SUPER STORE</h2>
+  <div class="tab">
+    <button class="tablinks" onclick="openInfo(event, 'Client')">Client</button>
+    <button class="tablinks" onclick="openInfo(event, 'Products')">Products</button>
+    <button class="tablinks" onclick="openInfo(event, 'Cart')">Cart</button>
+  </div>
+ </nav>
+
+  <!-- Tab content -->
+  <div id="Client" class="tabcontent">
+    <h3>CLIENT INFORMATION</h3>
+    <p>Tell us a bit about you.</p>
+    Choose a Category:
+    <select id="dietSelect" name="dietSelect" onchange="populateListProductChoices(this.id, 'displayProduct')">
+      <option value=""></option>
+      <option value="Vegetarian">Vegetarian</option>
+      <option value="GlutenFree">GlutenFree</option>
+      <option value="Lactose Intolerance">Lactose Intolerance</option>
+      <option value="Nut Allergy">Nut Allergy</option>
+      <option value="None">None</option>
+    </select>
+  </div>
+
+  <div id="Products" class="tabcontent">
+    <h3>YOUR TARGETED PRODUCTS</h3>
+    <p>We preselected products based on your restrictions.</p>
+  <p class="choose">  Choose items to buy:</p>
+    <div id="displayProduct"></div>
+    <button id="addCart" type="button" class="block" onclick="selectedItems()">
+      Add selected items to cart.
+    </button>
+  </div>
+
+  <div id="Cart" class="tabcontent">
+    <h3>CART</h3>
+    <p>Here is your cart.</p>
+    <div id="displayCart"></div>
+  </div>
+<footer>
+  Website designed by Jathushan Karthigesar
+</footer>
+  <script src="scripts/groceries.js"></script>
+  <script src="scripts/main.js"></script>
+
+</body>
+
+</html>
